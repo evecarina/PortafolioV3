@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './css/inicio.css';
 import { NavLink } from 'react-router-dom';
 import { connect } from "redux-zero/react";
+import curriculum from "./EvelynGuevara.pdf";
 
 const Portada=()=>{
   return(
@@ -10,9 +11,9 @@ const Portada=()=>{
       <div className="container-fluid">        
         <ul className="nav navbar-nav" > 
           <li className="col-md-6 " ><a href="#" ></a></li>        
-          <li className="col-md-1.5 c-nav-link"><NavLink to="/portafolio">PORTAFOLIO</NavLink></li>
+          <li className="col-md-1.5 c-nav-link"><NavLink to="/portafolio"><a>PORTAFOLIO</a></NavLink></li>
           <li className="col-md-1.5 c-nav-link "><NavLink to="/portada">SKILLS</NavLink></li>
-          <li className="col-md-1.5 c-nav-link "><NavLink to="/portada">CV</NavLink></li>
+          <li className="col-md-1.5 c-nav-link "><a href={curriculum}>CV</a></li>
         </ul>
       </div>     
       </nav>  
